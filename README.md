@@ -1,6 +1,10 @@
 # tensorflow_subcellular
 Demo code of Tensorflow model and training for the prediction of subcellular localization.
 
+The model is inspired by DeepLoc architecture published here:
+
+https://academic.oup.com/bioinformatics/article/33/21/3387/3931857
+
 Codes of this demo project are very similar to this paper:
 
 Detecting Sequence Signals in Targeting Peptides Using Deep Learning 
