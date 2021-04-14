@@ -89,7 +89,7 @@ def network(n_hidden_rnn, n_filt, n_hidden, filt_size, i_drop, e_drop,
     type_pred = tf.nn.softmax(type_pred_layer, name='Protein_pred')
 
     # Calculate cross-entropy for protein type prediction
-    loss_type = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=type_pred_layer, labels=type_prot)#*mask_layer_sub
+    loss_type = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=type_pred_layer, labels=type_prot)
 
     # Combined loss
     xent = loss_type
