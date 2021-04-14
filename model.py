@@ -101,6 +101,6 @@ def network(n_hidden_rnn, n_filt, n_hidden, filt_size, i_drop, e_drop,
 
     arg_class = tf.cast(tf.argmax(type_pred, 1), tf.int32)
     correct_pred = tf.equal(tf.round(arg_class), type_prot)
-    cf_m = tf.confusion_matrix(labels=type_prot, predictions=arg_class, num_classes=n_type) #, weights=mask_layer_sub)
+    cf_m = tf.confusion_matrix(labels=type_prot, predictions=arg_class, num_classes=n_type)
 
     return x, seq_len, is_training_pl, type_prot, train_adam, loss, type_pred, arg_class, correct_pred, cf_m
